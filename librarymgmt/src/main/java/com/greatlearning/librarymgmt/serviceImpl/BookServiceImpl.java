@@ -24,7 +24,6 @@ public class BookServiceImpl implements BookService {
 	@Override
 	public void saveOrUpdateBook(Book book) {
 		bookRepository.save(book);
-		bookRepository.flush();
 	}
 
 	@Override
